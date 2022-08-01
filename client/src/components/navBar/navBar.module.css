@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 0 10px #000;
+  border-radius: 5px;
+  margin: 1.8rem;
+  position: sticky;
+  top: 25px;
+}
+
+.moduleOneContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.moduleTwoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.navBarButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 0 0 5px rgb(61, 60, 60);
+  margin: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+.navBarButton:hover {
+  background-color: #000;
+  color: #fff;
+  text-shadow: 0 0 5px rgb(61, 60, 60);
+}
+
+.home {
+  background-image: url("../../images/home.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.title {
+  margin-left: 6rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 0 0 5px rgb(61, 60, 60);
+}
+
+.link {
+  text-decoration: none;
+}
