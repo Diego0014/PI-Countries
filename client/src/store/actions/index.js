@@ -9,6 +9,7 @@ import {
   ORDER_POLULATION,
   GET_ACTIVITIES,
   FILTER_BY_ACTIVITY_NAME,
+  CLEAR_DETAILS
 } from "../../constants/index";
 
 export const getCountries = () => {
@@ -93,3 +94,9 @@ export const orderPolulation = (order) => {
     payload: order,
   };
 };
+
+export const clearDetails = () => {
+  return {
+    type: CLEAR_DETAILS,
+  };
+}

@@ -16,7 +16,7 @@ export default function CountryDetail() {
     <>
       <NavBar />
       <div>
-        {country ? (
+        {country.length > 0 ? (
           <div className={style.container}>
             <div className={style.detailsHeader}>
               <h3 className={style.flagName}>{country.name}</h3>
@@ -32,11 +32,17 @@ export default function CountryDetail() {
             <div className={style.detailsBody}>
               <div className={style.detailsBodyInfo}>
                 <h3 className={style.title}>Details</h3>
-                <p className={style.parraph}><b>Capital:</b> {country.capital}</p>
-                <p className={style.parraph}><b>Subregion:</b> {country.subregion}</p>
-                <p className={style.parraph}><b>Area:</b> {country.area} km</p>
                 <p className={style.parraph}>
-                <b>Population:</b> {country.population}{" "}
+                  <b>Capital:</b> {country.capital}
+                </p>
+                <p className={style.parraph}>
+                  <b>Subregion:</b> {country.subregion}
+                </p>
+                <p className={style.parraph}>
+                  <b>Area:</b> {country.area} km
+                </p>
+                <p className={style.parraph}>
+                  <b>Population:</b> {country.population}{" "}
                 </p>
               </div>
               <div className={style.detailsBody}>

@@ -8,6 +8,7 @@ import {
   ORDER_POLULATION,
   GET_ACTIVITIES,
   FILTER_BY_ACTIVITY_NAME,
+  CLEAR_DETAILS,
 } from "../../constants/index";
 
 const initialState = {
@@ -89,6 +90,11 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         countries: oderByPopulation,
+      };
+    case CLEAR_DETAILS:
+      return {
+        ...state,
+        countryDetails: [],
       };
     default:
       return state;
